@@ -1,0 +1,48 @@
+﻿<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:local="clr-namespace:Xamarin"
+              x:Class="Xamarin.fixed_cost">
+
+    <ContentPage Title="入力">
+        <StackLayout>
+            <Label x:Name="aaa"
+               FontSize="35"
+               VerticalOptions="Start"></Label>
+            <Entry Placeholder="金額"
+                   x:Name="money"
+               FontSize="35"
+               VerticalOptions="StartAndExpand"/>
+            <Label Text="項目を選んでください"
+               FontSize="35"
+               x:Name="koumoku"></Label>
+            <StackLayout Orientation="Horizontal"
+                 HorizontalOptions="Center">
+                <Button Text="光熱費"
+                    FontSize="25"
+                    HorizontalOptions="Start"
+                    WidthRequest="150"
+                    x:Name="b1"/>
+                <Button Text="通信費"
+                    FontSize="25"
+                    HorizontalOptions="End"
+                    WidthRequest="150"
+                    x:Name="b2"/>
+                <Button Text="保険費"
+                    FontSize="25"
+                    HorizontalOptions="End"
+                    WidthRequest="150"
+                    x:Name="b3"/>
+            </StackLayout>
+            <StackLayout HorizontalOptions="Center">
+                <Button Text="登録する"
+                    x:Name="touroku"
+                    WidthRequest="400"
+                    FontSize="35"></Button>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage>
+
+    
+
+</TabbedPage>
